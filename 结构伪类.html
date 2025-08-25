@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        /* article p:first-child{
+            color: darksalmon;
+            font-size: 120%;
+            font-weight: bold;
+        } */
+         /* article P::first-line{
+            font-size: 130%;
+            font-weight: 400;
+            color: aqua;
+         } */
+          /* article p:first-child::first-line{
+             font-size: 130%;
+            font-weight: 400;
+            color: aqua;
+          } */
+           .box{
+             width: 200px;
+             height: 200px;
+             border: 1px solid black;
+             background-color: aqua;
+           }
+           .box::before{
+            content: '黄霄雲';
+           }
+           .box::after {
+  content: " ➥";
+}
+    </style>
+    <!-- <article>
+        <p>
+            蔬菜对你有好处，所以你需要多吃大头菜、大葱、白萝卜、苋菜、番茄酱、甜瓜、红豆、大蒜。
+        </p>
+
+        <p>
+            秋葵浓汤、甜菜叶、玉米、鸡冠菜、菊苣、秋葵浓汤、葫芦。欧芹、葱、西葫芦、塌棵菜、豌豆芽、蚕豆、羽衣甘蓝、蒲公英、秋葵、裙带菜、番茄。蒲公英、黄瓜、花生、豌豆、花生、鸡冠菜、西葫芦。
+        </p>
+    </article> -->
+    <div class="box">我的 HTML 页面的盒子中的内容</div>
+</body>
+
+</html>

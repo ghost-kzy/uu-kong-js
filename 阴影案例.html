@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        .hover-card {
+            width: 200px;
+            height: 150px;
+            background-color: aliceblue;
+            margin: 50px auto;
+            border-radius: 10px;
+            font-size: 1.2rem;
+            display: grid;
+            /* 水平垂直居中 */
+            place-items: center;   
+            
+            transition: all 0.3s ease;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+        .hover-card:hover{
+            box-shadow: 0 10px 25px rgba(0,100,255,0.3);
+            transform: translateY(8px);
+        }
+    </style>
+    <div class="hover-card">鼠标悬停我</div>
+</body>
+
+</html>

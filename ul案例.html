@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .fancy-list {
+        list-style: none;
+        padding: 0;
+        width: 300px;
+    }
+
+    .fancy-list li {
+        padding: 15px;
+        margin-bottom: 8px;
+        background-color: #f8f9fa;
+        border-left: 4px solid #4caf50;
+        position: relative;
+        padding-left: 40px;
+        border-radius: 0 8px 8px 0;
+        transition: all 0.3s;
+
+
+    }
+
+    .fancy-list li:hover {
+        background-color: aquamarine;
+        transform: translateX(5px);
+    }
+
+    /* 使用伪元素添加图标 √ */
+    .fancy-list li::before {
+        content: '^_^';
+        /* 完美垂直居中 */
+        position: absolute;
+        transform: translateY(-50%);
+        top: 50%;
+        left: 5px;
+        color: #4CAF50;
+        font-weight: bold;
+
+    }
+</style>
+
+<body>
+    <h3>待办事项</h3>
+    <ul class="fancy-list">
+        <li>完成CSS练习</li>
+        <li>阅读前端文章</li>
+        <li>准备项目文档</li>
+        <li>黄霄雲真可爱</li>
+    </ul>
+</body>
+
+</html>

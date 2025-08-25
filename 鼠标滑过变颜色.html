@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            list-style: none;
+            text-decoration: none;
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .box {
+            border: 1px solid salmon;
+            width: 300px;
+            height: 300px;
+            margin: 100px auto;
+        }
+
+        ul li {
+            text-align: center;
+        }
+
+        ul a {
+            display: block;
+            height: 30px;
+            line-height: 30px;
+            border-bottom: 1px solid sandybrown;
+            color: salmon;
+        }
+
+        .last {
+            border-bottom: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <ul>
+            <li><a href="#">黄霄雲</a></li>
+            <li><a href="#">黄霄雲</a></li>
+            <li><a href="#">黄霄雲</a></li>
+            <li><a href="#">黄霄雲</a></li>
+            <li><a href="#">黄霄雲</a></li>
+            <li><a href="#">黄霄雲</a></li>
+            <li><a href="#">黄霄雲</a></li>
+            <li><a href="#">黄霄雲</a></li>
+            <li><a href="#">黄霄雲</a></li>
+            <li><a class="last" href="#">孔中由</a></li>
+        </ul>
+    </div>
+    <script>
+        let lists = document.querySelectorAll('ul li')
+        console.log(lists);
+        for (let i = 0; i < lists.length; i++) {
+            let currentLi = lists[i]
+            currentLi.style.background = i % 2 === 0 ? '#3817' : '#9312'
+            // if(i%2===0){
+            //     // 索引是偶数代表奇数行
+            //     currentLi.style.background='#3817'
+            // }else{
+            //     currentLi.style.background='#9312'
+            // }
+            currentLi.onmouseover=function(){
+                this.style.background='blue'
+            }
+            currentLi.onmouseout=function(){
+                this.style.background='#bfa'
+            }
+        }
+
+    </script>
+</body>
+
+</html>

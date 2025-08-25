@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+
+    </style>
+</head>
+<body>
+<button>按钮1</button>
+<button>按钮2</button>
+<button>按钮3</button>
+<script>
+    let btn = document.querySelectorAll('button');
+    for (let i = 0; i < btn.length; i++) {
+        // 设置自定义属性 元素对象.属性名=属性值 （原理是像元素对象对应的堆内存中添加了一个属性）
+        btn[i].setAttribute('data-index',i);
+        btn[i].addEventListener('click', () => {
+            alert(btn[i].getAttribute('data-index'));
+        })
+    }
+</script>
+</body>
+</html>
