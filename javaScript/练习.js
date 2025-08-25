@@ -65,14 +65,14 @@ let obj = {
 // }=obj
 
 
-// let data = [
-//     10001,
-//     {
-//         name: 'John',
-//         age: 4,
-//         score: [100, 999, 55]
-//     }
-// ]
-// let [id, {name, age, score: [, math]}] = data
-//
-// console.log(`编号${id}姓名${name}年龄${age}数学成绩${math}`)
+let data = [
+    10001,
+    {
+        name: 'John',
+        age: 4,
+        score: [100, 999, 55]
+    }
+]
+let [id, {name, age, score: [, math]}] = data
+
+console.log(`编号${id}姓名${name}年龄${age}数学成绩${math}`)
